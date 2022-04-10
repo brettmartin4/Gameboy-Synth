@@ -1,0 +1,8 @@
+1 - orange
+2 - green             DATA
+3 - blue (1 blk)      CLK
+4 - brown (1 ylw)
+5 - yellow
+6 - red (dbl orange)  GND
+
+ext - black

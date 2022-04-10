@@ -1,0 +1,142 @@
+
+Header: 2 bits
+
+00 - Note
+01 - Switch parameter
+10 - Potentiometer parameter
+11 - Not used
+
+_____________________________
+Note: 6 bits
+
+Code    - Note  -  MIDI
+
+00 0000 - NOTE RELEASE
+00 0001 - F1  - 29
+00 0010 - F#1 - 30
+00 0011 - G1  - 31
+
+00 0100 - G#1 - 32
+00 0101 - A1  - 33
+00 0110 - A#1 - 34
+00 0111 - B1  - 35
+
+00 1000 - C2  - 36
+00 1001 - C#2 - 37
+00 1010 - D2  - 38
+00 1011 - D#2 - 39
+
+00 1100 - E2  - 40
+00 1101 - F2  - 41
+00 1110 - F#2 - 42
+00 1111 - G2  - 43
+
+01 0000 - G#2 - 44
+01 0001 - A2  - 45
+01 0010 - A#2 - 46
+01 0011 - B2  - 47
+
+01 0100 - C3  - 48
+01 0101 - C#3 - 49
+01 0110 - D3  - 50
+01 0111 - D#3 - 51
+
+01 1000 - E3  - 52
+01 1001 - F3  - 53
+01 1010 - F#3 - 54
+01 1011 - G3  - 55
+
+01 1100 - G#3 - 56
+01 1101 - A3  - 57
+01 1110 - A#3 - 58
+01 1111 - B3  - 59
+
+10 0000 - MID C (C4) - 60
+10 0001 - C#4 - 61
+10 0010 - D4  - 62
+10 0011 - D#4 - 63
+
+10 0100 - E4  - 64
+10 0101 - F4  - 65
+10 0110 - F#4 - 66
+10 0111 - G4  - 67
+
+10 1000 - G#4 - 68
+10 1001 - A4  - 69
+10 1010 - A#4 - 70
+10 1011 - B4  - 71
+
+10 1100 - C5  - 72
+10 1101 - C#5 - 73
+10 1110 - D5  - 74
+10 1111 - D#5 - 75
+
+11 0000 - E5  - 76
+11 0001 - F5  - 77
+11 0010 - F#5 - 78
+11 0011 - G5  - 79
+
+11 0100 - G#5 - 80
+11 0101 - A5  - 81
+11 0110 - A#5 - 82
+11 0111 - B5  - 83
+
+11 1000 - C6  - 84
+11 1001 - C#6 - 85
+11 1010 - D6  - 86
+11 1011 - D#6 - 87
+
+11 1100 - E6  - 88
+11 1101 - F6  - 89
+11 1110 - F#6 - 90
+11 1111 - G6  - 91
+
+_____________________________
+Switch parameters: 6 bits
+CCSSSS (Channel, Switch value)
+
+Code - Switch values
+
+11 0000 - Channel 1
+11 0001 - Channel 2
+11 0010 - Channel 3
+11 0011 - Channel 4
+
+00 0000 - [NOT USED]
+00 0001 - [NOT USED]
+00 0010 - Len Enable (on)
+00 0011 - Len Enable (off)
+
+00 0100 - Env Add (on)
+00 0101 - Env Add (off)
+00 0110 - Negate (on)
+00 0111 - Negate (off)
+
+00 1000 - Width mode/lfsr (on)
+00 1001 - Width mode/lfsr (off)
+00 1010 - Trigger (on)
+00 1011 - Trigger (off)
+
+00 1100 - [NOT USED]
+00 1101 - [NOT USED]
+00 1110 - [NOT USED]
+00 1111 - [NOT USED]
+
+_____________________________
+Potentiometer parameters: 6 bits
+PPPVVV (potentiometer, value)
+
+Code - Pot values
+
+00 0XXX - Volume
+00 1XXX - Len Load
+01 0XXX - Period
+01 1XXX - Duty
+
+10 0XXX - Sweep Pad
+10 1XXX - Shift
+11 0XXX - Clk Shift
+11 1XXX - Div Code
+
+3 LSB - Pot value (0 to 7)
+_____________________________

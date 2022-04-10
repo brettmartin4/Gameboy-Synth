@@ -1,0 +1,9 @@
+ARDUINO PINS:
+
+A0-A7            Potentiometers   (IN)
+50:              Serial out       (OUT)
+52:              Serial clk       (OUT)
+
+22-38(even):     Switches         (IN)
+21-31(odd):      Keyboard in      (IN)
+33:              Keyboard verify  (IN)
